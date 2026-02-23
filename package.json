@@ -1,0 +1,29 @@
+{
+  "name": "mcp-speak",
+  "version": "0.1.0",
+  "description": "MCP server: feedback_speaker tool for TTS (macOS say / Windows SAPI). Agent can call it to announce tasks.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-speak": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.23.0",
+    "@andresaya/edge-tts": "^1.8.0",
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
