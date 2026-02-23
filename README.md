@@ -9,7 +9,7 @@ No API keys. Free. Works in German and English.
 1. Build the MCP server (required for the natural voice; `npm install` pulls in Edge TTS):
 
    ```bash
-   cd /path/to/agent_hint_speaking
+   cd /path/to/agent_feedback_voice
    npm install
    npm run build
    ```
@@ -22,7 +22,7 @@ No API keys. Free. Works in German and English.
      "mcpServers": {
        "feedback_speaker": {
          "command": "node",
-         "args": ["/ABSOLUTE/PATH/TO/agent_hint_speaking/dist/index.js"]
+         "args": ["/ABSOLUTE/PATH/TO/agent_feedback_voice/dist/index.js"]
        }
      }
    }
